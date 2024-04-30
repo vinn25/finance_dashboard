@@ -7,7 +7,7 @@ import WalletFeed from "../components/WalletFeed";
 const Wallet = () => {
   return (
     <Box bgcolor="lightyellow">
-      <Stack direction="row">
+      <Stack direction="row" height="100vh">
         <Sidebar />
         <Stack sx={{ width: "85%" }}>
           <Navbar />
