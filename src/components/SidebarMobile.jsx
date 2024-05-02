@@ -16,21 +16,18 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SmsIcon from "@mui/icons-material/Sms";
 import SettingsIcon from "@mui/icons-material/Settings";
 
-const Sidebar = () => {
+const SidebarMobile = () => {
   return (
     <Box
       sx={{
         bgcolor: "#080325",
         width: "15%",
-        display: { xs: "none", lg: "block" },
+        display: { xs: "block", sm: "none" },
       }}
     >
       <Stack spacing="40%">
         <List>
           <ListItem sx={{ gap: "30%", p: "10%" }}>
-            <Typography variant="h5" color="white" fontStyle="italic">
-              Ringku
-            </Typography>
             <Fab size="small" color="primary" sx={{ boxShadow: "none" }}>
               <MenuIcon />
             </Fab>
@@ -102,9 +99,9 @@ const Sidebar = () => {
                 <SmsIcon sx={{ fontSize: "large", color: "white" }} />
               </ListItemIcon>
               {/* <ListItemText
-              primary="Recent Transactions"
-              sx={{ color: "white" }}
-            /> */}
+                primary="Recent Transactions"
+                sx={{ color: "white" }}
+              /> */}
               <Typography variant="caption" color="white">
                 Recent Transactions
               </Typography>
@@ -147,4 +144,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SidebarMobile;

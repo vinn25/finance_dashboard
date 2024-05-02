@@ -16,18 +16,18 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SmsIcon from "@mui/icons-material/Sms";
 import SettingsIcon from "@mui/icons-material/Settings";
 
-const Sidebar = () => {
+const SidebarMedium = () => {
   return (
     <Box
       sx={{
         bgcolor: "#080325",
         width: "15%",
-        display: { xs: "none", lg: "block" },
+        display: { xs: "none", md: "block", lg: "none" },
       }}
     >
       <Stack spacing="40%">
         <List>
-          <ListItem sx={{ gap: "30%", p: "10%" }}>
+          <ListItem sx={{ gap: "15%", p: "10%" }}>
             <Typography variant="h5" color="white" fontStyle="italic">
               Ringku
             </Typography>
@@ -40,11 +40,12 @@ const Sidebar = () => {
             <ListItemButton
               sx={{
                 p: "10%",
+                pl: "0",
                 borderRadius: "5px",
                 "&:hover": { bgcolor: "grey" },
               }}
             >
-              <ListItemIcon>
+              <ListItemIcon sx={{ pl: "7%" }}>
                 <SmsIcon sx={{ fontSize: "large", color: "white" }} />
               </ListItemIcon>
               {/* <ListItemText primary="My Wallet" sx={{ color: "white" }} /> */}
@@ -58,11 +59,12 @@ const Sidebar = () => {
             <ListItemButton
               sx={{
                 p: "10%",
+                pl: "0",
                 borderRadius: "5px",
                 "&:hover": { bgcolor: "grey" },
               }}
             >
-              <ListItemIcon>
+              <ListItemIcon sx={{ pl: "7%" }}>
                 <SmsIcon sx={{ fontSize: "large", color: "white" }} />
               </ListItemIcon>
               {/* <ListItemText primary="My Card" sx={{ color: "white" }} /> */}
@@ -76,11 +78,12 @@ const Sidebar = () => {
             <ListItemButton
               sx={{
                 p: "10%",
+                pl: "0",
                 borderRadius: "5px",
                 "&:hover": { bgcolor: "grey" },
               }}
             >
-              <ListItemIcon>
+              <ListItemIcon sx={{ pl: "7%" }}>
                 <SmsIcon sx={{ fontSize: "large", color: "white" }} />
               </ListItemIcon>
               {/* <ListItemText primary="Finance Chart" sx={{ color: "white" }} /> */}
@@ -94,17 +97,18 @@ const Sidebar = () => {
             <ListItemButton
               sx={{
                 p: "10%",
+                pl: "0",
                 borderRadius: "5px",
                 "&:hover": { bgcolor: "grey" },
               }}
             >
-              <ListItemIcon>
+              <ListItemIcon sx={{ pl: "7%" }}>
                 <SmsIcon sx={{ fontSize: "large", color: "white" }} />
               </ListItemIcon>
               {/* <ListItemText
-              primary="Recent Transactions"
-              sx={{ color: "white" }}
-            /> */}
+                primary="Recent Transactions"
+                sx={{ color: "white" }}
+              /> */}
               <Typography variant="caption" color="white">
                 Recent Transactions
               </Typography>
@@ -117,11 +121,12 @@ const Sidebar = () => {
             <ListItemButton
               sx={{
                 p: "10%",
+                pl: "0",
                 borderRadius: "5px",
                 "&:hover": { bgcolor: "grey" },
               }}
             >
-              <ListItemIcon>
+              <ListItemIcon sx={{ pl: "7%" }}>
                 <SettingsIcon sx={{ fontSize: "large", color: "white" }} />
               </ListItemIcon>
               {/* <ListItemText primary="Settings" sx={{ color: "white" }} /> */}
@@ -147,4 +152,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SidebarMedium;
