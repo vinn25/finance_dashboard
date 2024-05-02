@@ -22,6 +22,8 @@ const Sidebar = () => {
       sx={{
         bgcolor: "#080325",
         width: "15%",
+        height: "100vh",
+        // position: "fixed",
         display: { xs: "none", lg: "block" },
       }}
     >
